@@ -6,9 +6,9 @@ repository = "https://thunderstore.io"
 
 [package]
 namespace = "Citroos"
-name = "PEAKJumpscares"
+name = "RandomJumpscares"
 description = "A mod for PEAK that adds a FNAF Foxy jumpscare and the Bad To The Bone riff"
-websiteUrl = "" # TODO: Add a link to your mod repository here (optional)
+websiteUrl = "https://github.com/citroos/PEAK-Random-Jumpscares"
 containsNsfwContent = false
 
 [package.dependencies]
@@ -20,7 +20,7 @@ readme = "../../README.md"
 outdir = "../../artifacts/thunderstore/"
 
 [[build.copy]]
-source = "../../artifacts/bin/PEAKJumpscares/release/com.github.citrusking.PEAKJumpscares.dll"
+source = "../../artifacts/bin/RandomJumpscares/release/RandomJumpscares.dll"
 target = "plugins/"
 
 [[build.copy]]
