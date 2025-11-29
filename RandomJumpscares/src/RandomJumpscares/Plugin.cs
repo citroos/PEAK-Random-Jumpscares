@@ -6,7 +6,7 @@ using HarmonyLib;
 using UnityEngine;
 using UnityEngine.Audio;
 
-namespace PEAKJumpscares;
+namespace RandomJumpscares;
 
 [BepInAutoPlugin]
 public partial class Plugin : BaseUnityPlugin
@@ -14,7 +14,6 @@ public partial class Plugin : BaseUnityPlugin
     internal static ManualLogSource Log { get; private set; } = null!;
     internal static AssetBundle jumpscareAssetBundle = null!;
     internal static GameObject jumpscarePrefab = null!;
-    internal static AudioMixer jumpscareAudioMixer = null!;
     private ConfigEntry<bool> configFoxyBool = null!;
     private ConfigEntry<bool> configBadBoneBool = null!;
     private ConfigEntry<float> configFoxyVolume = null!;
@@ -58,11 +57,12 @@ public partial class Plugin : BaseUnityPlugin
         configFoxyOdds = Config.Bind("Jumpscare Odds", "FoxyOdds", 10000, "If this is X, there is a 1 in X chance of the Foxy jumpscare every single second");
         configBadBoneOdds = Config.Bind("Jumpscare Odds", "BadToTheBoneOdds", 2500, "If this is X, there is a 1 in X chance of the Bad To The Bone riff every single second");
 
-        string jumpscareAssetBundlePath = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "jumpscare");
+        string jumpscareAssetBundlePath = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "randomjumpscares");
         jumpscareAssetBundle = AssetBundle.LoadFromFile(jumpscareAssetBundlePath);
-        jumpscarePrefab = jumpscareAssetBundle.LoadAsset<GameObject>("Jumpscare.prefab");
-        jumpscareAudioMixer = jumpscareAssetBundle.LoadAsset<AudioMixer>("JumpscareAudioMixer.mixer");
-        Jumpscare jumpscareComponent = jumpscarePrefab.AddComponent<Jumpscare>();
+        jumpscarePrefab = jumpscareAssetBundle.LoadAsset<GameObject>("JumpscareCanvas.prefab");
+        AudioMixer jumpscareAudioMixer = jumpscareAssetBundle.LoadAsset<AudioMixer>("JumpscareAudioMixer.mixer");
+
+        RandomJumpscares jumpscareComponent = jumpscarePrefab.AddComponent<RandomJumpscares>();
         jumpscareComponent.mixer = jumpscareAudioMixer;
         jumpscareComponent.configFoxyBool = configFoxyBool.Value;
         jumpscareComponent.configBadBoneBool = configBadBoneBool.Value;
