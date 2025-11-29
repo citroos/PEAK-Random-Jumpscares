@@ -2,10 +2,13 @@
 
 A mod that adds the 1/10000 chance for Withered Foxy (and a 1/2500 chance for the Bad To The Bone riff) every second you are on the island, inspired by [ymy's original Terraria mod](<https://steamcommunity.com/sharedfiles/filedetails/?id=3481943642>).
 
+<img width="750" height="422" alt="FoxyJumpscare" src="https://github.com/user-attachments/assets/60a3a94d-5ec8-4560-b799-5cef32a0d1a8" />
+
 ## Features
 
 - A sick guitar riff
 - A constant feeling of unease
+
 
 ## Configuration
 
@@ -16,7 +19,7 @@ You can configure:
 
 for both the Withered Foxy jumpscare and the Bad To The Bone riff.
 
-After running the mod at least once, configuration can be found at: [steam directory]\PEAK\BepInEx\config\RandomJumpscares.cfg
+After running the mod at least once, configuration can be found at:<br>[steam directory]\PEAK\BepInEx\config\RandomJumpscares.cfg
 (or in your mod manager's BepInEx directory)
 
 ## Manual Installation
