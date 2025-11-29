@@ -226,3 +226,8 @@ artifacts/**/*.zip
 *.txt
 artifacts/**
 Config.Build.user.props
+Directory.Build.props
+Directory.Build.targets
+/.idea
+/.config
+Config.Build.user.props.template

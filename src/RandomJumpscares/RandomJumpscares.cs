@@ -58,7 +58,7 @@ public class RandomJumpscares : MonoBehaviour
     {
         foxyAnimator.enabled = true;
         foxyAudio.Play();
-        foxyAnimator.Play("FoxyJumpscare", 0, 0f);
+        foxyAnimator.Play("FoxyJumpscare");
 
         AnimatorStateInfo animatorState = foxyAnimator.GetCurrentAnimatorStateInfo(0);
         yield return new WaitForSeconds(animatorState.length / foxyAnimator.speed);
