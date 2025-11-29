@@ -1,13 +1,13 @@
 [config]
-schemaVersion = "0.0.1"
+schemaVersion = "1.0.0"
 
 [general]
 repository = "https://thunderstore.io"
 
 [package]
 namespace = "Citroos"
-name = "RandomJumpscares"
-description = "A mod for PEAK that adds a FNAF Foxy jumpscare and the Bad To The Bone riff"
+name = "Random_Jumpscares"
+description = "Adds a random chance of Withered Foxy jumpscare and the Bad To The Bone riff every second"
 websiteUrl = "https://github.com/citroos/PEAK-Random-Jumpscares"
 containsNsfwContent = false
 
@@ -21,7 +21,11 @@ outdir = "../../artifacts/thunderstore/"
 
 [[build.copy]]
 source = "../../artifacts/bin/RandomJumpscares/release/RandomJumpscares.dll"
-target = "plugins/"
+target = "plugins/RandomJumpscares/RandomJumpscares.dll"
+
+[[build.copy]]
+source = "randomjumpscares"
+target = "plugins/RandomJumpscares/randomjumpscares"
 
 [[build.copy]]
 source = "../../CHANGELOG.md"
@@ -41,4 +45,4 @@ communities = [ "peak", ]
 [publish.categories]
 # See categories at:
 # https://thunderstore.io/api/experimental/community/peak/category/
-peak = [ "mods", ]
+peak = [ "mods", "client side", ]
