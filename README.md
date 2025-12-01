@@ -2,7 +2,7 @@
 
 A mod that adds the 1/10000 chance for Withered Foxy Jumpscare (and a 1/2500 chance for the Bad To The Bone riff) every second you are on the island, inspired by [ymy's original Terraria mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3481943642).
 
-![Foxy Jumpscare in game](https://github.com/user-attachments/assets/b7790147-55d1-488c-b6cb-74d55d805e55)
+<img alt="Foxy Jumpscare in game" src="https://github.com/user-attachments/assets/b7790147-55d1-488c-b6cb-74d55d805e55" />
 
 ## Features
 
