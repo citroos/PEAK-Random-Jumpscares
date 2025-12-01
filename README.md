@@ -1,14 +1,13 @@
-# RandomJumpscares
+# Random Jumpscares
 
-A mod that adds the 1/10000 chance for Withered Foxy (and a 1/2500 chance for the Bad To The Bone riff) Jumpscare every second you are on the island, inspired by [ymy's original Terraria mod](<https://steamcommunity.com/sharedfiles/filedetails/?id=3481943642>).
+A mod that adds the 1/10000 chance for Withered Foxy Jumpscare (and a 1/2500 chance for the Bad To The Bone riff) every second you are on the island, inspired by [ymy's original Terraria mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3481943642).
 
-<img width="750" height="422" alt="FoxyJumpscare" src="https://github.com/user-attachments/assets/60a3a94d-5ec8-4560-b799-5cef32a0d1a8" />
+![Foxy Jumpscare in game](https://github.com/user-attachments/assets/b7790147-55d1-488c-b6cb-74d55d805e55)
 
 ## Features
 
 - A sick guitar riff
 - A constant feeling of unease
-
 
 ## Configuration
 
@@ -29,6 +28,14 @@ After running the mod at least once, configuration can be found at:<br>[steam di
 3. Start the game once for first-time BepInEx setup
 4. Place this mod's folder (containing RandomJumpscares.dll) into the BepInEx\plugins directory
 5. Done!
+
+## Check Out My Other Mod
+
+- [Dr Pepper Cure All](https://thunderstore.io/c/peak/p/Citroos/Dr_Pepper_Cure_All/) - Replaces the Cure-All with a delicious can of Dr Pepper!
+
+## Credit
+
+- Original idea and Foxy PNGs by [ymy on Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3481943642)
 
 ## Contact Me
 

@@ -32,7 +32,6 @@ public partial class Plugin : BaseUnityPlugin
             if (!Character.localCharacter.inAirport)
             {
                 __instance.StartCoroutine(SpawnJumpscareAfterWait());
-                
             }
         }
 
