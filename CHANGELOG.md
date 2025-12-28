@@ -1,3 +1,7 @@
+### 1.0.7
+
+- Backpack interactability bug fixed
+
 ### 1.0.1 - 1.0.6
 
 - Foxy animation on startup bug fixed
